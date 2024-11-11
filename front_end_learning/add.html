@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta name ="viewport"content="width-device-width",initial-scale=1.0>
+
+    </head>
+    <body>
+       <div>
+        <form>
+            <div>
+                <label for ="firstNumber">firstNumber</label>
+                <input type="text" id="firstNumber" name="firstNumber">
+            </div>
+            <div>
+                <label for ="secondNumber">secondNumber</label>
+                <input type="text" id="secondNumber" name="secondNumber">
+            </div>
+            <div>
+                <label for ="sumNumber">sum</label>
+                <input type="button" id="sumNumber" name="sumNumber">
+            </div>
+            <button type="button" onclick="addTwoNumber()">Add</button>
+        </form>
+       </div>
+       <script type="text/javascript">
+        function addTwoNumber(){
+            var firstNumber = parseInt(document.getElementById("firstNumber").value);
+            var secondNumber = parseInt(document.getElementById("secondNumber").value);
+            var sum = firstNumber+secondNumber;
+            document.getElementById("sumNumber").value=sum;
+        }
+       </script>
+    </body>
+</html>
